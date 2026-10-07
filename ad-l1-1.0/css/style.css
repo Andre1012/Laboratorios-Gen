@@ -1,0 +1,36 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para box model */
+}
+
+/* Globales */
+
+body{
+  font-size: 1.6rem;
+  line-height: 1.5; /* Interlineado */
+}
+
+img{
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+h1{
+  color: green
+}
+
+/* ID */
+#red {
+  color: rgb(206, 46, 46);
+}
+
+/* Body */
+.blue{
+  color: rgb(45, 73, 183);
+}
+
+/* Cursor */
+.click-header {
+  cursor: pointer;
+}
