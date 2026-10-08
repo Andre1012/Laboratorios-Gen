@@ -1,0 +1,28 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para box model */
+}
+
+/* Globales */
+body {
+    background-color: #d5cccc;
+}
+
+img{
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+h3{
+  color: green;
+}
+
+.blue{
+  color: rgb(33, 33, 156);
+}
+
+.red{
+  color: rgb(169, 31, 31);
+}
+  
