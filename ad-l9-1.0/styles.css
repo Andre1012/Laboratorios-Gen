@@ -1,0 +1,180 @@
+:root {
+  color-scheme: light;
+  --ink: #1f2937;
+  --muted: #64748b;
+  --paper: #f7f4ee;
+  --card: #ffffff;
+  --accent: #3858d6;
+  --accent-dark: #293f9d;
+  --line: #dfe4ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle at top right, #e6ebff, transparent 34%), var(--paper);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+}
+
+.page-shell {
+  width: min(980px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.narrow {
+  max-width: 720px;
+}
+
+.hero {
+  max-width: 650px;
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow,
+.task-number {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  line-height: 1.15;
+}
+
+h1 {
+  margin: 0.35rem 0 1rem;
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
+}
+
+.hero p:last-child {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.task-card,
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background: var(--card);
+  box-shadow: 0 1rem 2.5rem rgba(38, 49, 93, 0.08);
+}
+
+.task-card {
+  display: block;
+  padding: 1.35rem;
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.task-card:hover,
+.task-card:focus-visible {
+  box-shadow: 0 1.25rem 2.8rem rgba(38, 49, 93, 0.16);
+  transform: translateY(-3px);
+}
+
+.task-card h2 {
+  margin: 0.65rem 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.task-card p,
+.hint {
+  margin: 0;
+  color: var(--muted);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.panel {
+  padding: clamp(1.5rem, 5vw, 3rem);
+}
+
+.panel h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+button {
+  border: 0;
+  border-radius: 0.7rem;
+  padding: 0.8rem 1.1rem;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+button:hover,
+button:focus-visible {
+  background: var(--accent-dark);
+}
+
+form {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 360px;
+}
+
+label {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+input {
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  padding: 0.75rem;
+  font: inherit;
+}
+
+form button {
+  margin-top: 1rem;
+}
+
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem 0 1.5rem;
+}
+
+#container {
+  border: 1px dashed var(--line);
+  border-radius: 0.7rem;
+  padding: 1rem 1.5rem;
+}
+
+.footer {
+  min-height: 1rem;
+}
